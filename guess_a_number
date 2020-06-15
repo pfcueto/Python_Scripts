@@ -1,0 +1,23 @@
+from random import randrange
+x = randrange(1000)
+i = 0
+y = 10
+
+# while i < 10: 
+for i in range(0, 10):
+    a = input("Intenta adivinar el número del 1 al 1000: ")
+    i = i + 1
+    y = y - 1
+    if int(a) == x:
+        print("Well Done, you've guessed it") 
+        print("You've guessed it in " + str(i) + " attempts")
+        break
+    elif int(a) < x:
+        print("Guess higher")
+    else:
+        print("Guess lower")
+    print("Te quedan " + str(y) + " intentos")
+
+
+if i == 10: 
+    print("Has fallado! La respuesta correcta era: " + str(x))
