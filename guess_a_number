@@ -17,7 +17,6 @@ for i in range(0, 10):
     else:
         print("Guess lower")
     print("Te quedan " + str(y) + " intentos")
-
-
-if i == 10: 
-    print("Has fallado! La respuesta correcta era: " + str(x))
+    
+    if i == 10: 
+        print("Has fallado! La respuesta correcta era: " + str(x))
