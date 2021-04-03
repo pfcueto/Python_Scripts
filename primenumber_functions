@@ -1,0 +1,27 @@
+def numprim(a):
+    ii = 0
+    lista_divisores = []
+    for i in range(1,a+1):
+        x = a % i
+        if x == 0:
+            ii = ii + 1
+            lista_divisores.extend([i])
+    if ii == 2:
+        print(str(a) + ' es un numero primo')
+    else:
+        print(str(a) + ' no es un numero primo. Sus divisores son: ' + str(lista_divisores))
+        
+    
+def numprim_lista(a):
+    lista_numprim = []
+    for i in range(1,a+1):
+        iii = 0
+        for ii in range(1,i+1):
+            x = i % ii
+            if x == 0:
+                iii = iii + 1
+                
+        if iii == 2 or i == 1:
+            lista_numprim.extend([ii])
+
+    print(lista_numprim)
